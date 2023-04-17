@@ -224,6 +224,30 @@ header .intro-text {
 	line-height: 24px;
 	margin: 15px 0 30px;
 }
+/* MyFeatures Section */
+#myfeatures {
+	padding: 120px 0;
+}
+#myfeatures .features-item {
+	margin: 0 20px;
+}
+#myfeatures img {
+	margin: 30px auto 20px;
+}
+#myfeatures .about-img:before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	bottom: 8px;
+	left: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+#myfeatures p {
+	line-height: 24px;
+	margin: 15px 0 30px;
+}
 /* About Section */
 #about {
 	padding: 0;
