@@ -1,0 +1,57 @@
+p {
+	display: inline-block;
+	width: 60ch;
+	font-size: 20px;
+}
+.name-text {
+	font-weight: bold;
+}
+
+.prof-text {
+	color: rgb(201, 29, 29);
+}
+
+.city-text {
+	font-style: italic;
+}
+
+.text:nth-of-type(2) {
+	background-color: bisque;
+}
+
+.client-text {
+	font-weight: bold;
+	color: blue;
+}
+
+.internet-text {
+	text-transform: uppercase;
+}
+
+.browser-text {
+	font-style: italic;
+	color: orange;
+}
+
+.server-text {
+	color: red;
+}
+
+.item {
+    display: inline-block;
+    width: 300px;
+    background-color: rgb(240, 152, 70);
+}
+
+.item-name {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.item-count {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}
