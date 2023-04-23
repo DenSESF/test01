@@ -1,0 +1,43 @@
+/* Подключение шрифтов в CSS */
+/* С помощью специального правила @import */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic');
+
+/* С помощью специального CSS-правила @font-face */
+@font-face {
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-family: "Roboto Regular";
+}
+
+/* Подключение нескольких файлов шрифтов через @font-face */
+@font-face {
+    font-family: 'Gilroy';
+    src: 
+/*         url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'), */
+        url('../fonts/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Для того, чтобы использовать шрифт, нужно указать его в CSS-коде нужного элемента в свойстве font-family */
+
+.text-noto-serif {
+    font-family: "Noto Serif", "Times New Roman", serif;
+}
+
+.w700 {
+	font-weight: 700;
+}
+
+.text-open-sans {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+}
+
+.text-roboto-regular {
+    font-family: "Roboto Regular", "Helvetica", "Arial", sans-serif;
+}
+
+.text-gilroy {
+    font-family: "Gilroy", "Helvetica", "Arial", sans-serif;
+}
