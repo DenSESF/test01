@@ -23,19 +23,21 @@ h2 {
     box-shadow: 5px 5px 10px grey;
     padding: 20px;
     margin-bottom: 20px;
+    min-height: 300px;
     display: flex;
-}
-
- .gallery:nth-of-type(odd) {
-    flex-direction: row-reverse;
-}
-
-.gallery:nth-of-type(even) {
-    flex-direction: row;
+    align-items: center;
 }
 
 .gallery > img {
     width: 200px;
+}
+
+.gallery > img:nth-of-type(-n+3) {
+    align-self: flex-start;
+}
+
+.gallery > img:nth-of-type(n+7) {
+    align-self: flex-end;
 }
 
 /* .gallery-1 {
