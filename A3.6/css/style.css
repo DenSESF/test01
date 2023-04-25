@@ -1,14 +1,16 @@
 header {
+    display: flex;
+    justify-content: space-between;
     background-color: #153586;
 }
 
 .site-menu{
     display: flex;
-    flex-direction: row-reverse;
 }
 
-li {
+.site-menu > li {
     list-style: none;
+    margin: 0 5px;
 }
 
 li > a {
