@@ -1,0 +1,9 @@
+.intro {
+    color: #fff;
+    padding: 50px 25px;
+    background-image: url('../images/pexels-anand-dandekar-1532771.jpg');
+    background-repeat: no-repeat;
+/*     background-size: cover; */
+    background-position: 50% 50%;
+    background-color: rgb(153, 155, 191);
+}

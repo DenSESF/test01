@@ -1,39 +1,39 @@
 @font-face {
 	font-family: "Open Sans";
-/*	src: local("Open Sans Regular"), url("../fonts/OpenSans-Regular.ttf") format("TrueType"),*/
-	src: url("../fonts/OpenSans.woff2") format("font/woff2");
+	src: local("Open Sans Regular"), url('../fonts/OpenSans-Regular.ttf') format("TrueType"),
+	url('../fonts/OpenSans.woff2') format("font/woff2");
 	font-weight: 400;  /* Normal (Regular) */
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Open Sans";
-/*	src: local("Open Sans Italic"), url("../fonts/OpenSans-Italic.ttf") format("TrueType"),*/
-	src: url("../fonts/OpenSans-Italic.woff2") format("font/woff2");
+	src: local("Open Sans Italic"), url('../fonts/OpenSans-Italic.ttf') format("TrueType"),
+	url("../fonts/OpenSans-Italic.woff2") format("font/woff2");
 	font-weight: 400; /* Normal (Regular) */
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Open Sans SemiBold";
-/*	src: local("Open Sans SemiBold"), url("../fonts/OpenSans-SemiBold.ttf") format("TrueType"),*/
-	src: url("../fonts/OpenSans.woff2") format("font/woff2");
+	src: local("Open Sans SemiBold"), url('../fonts/OpenSans-SemiBold.ttf') format("TrueType"),
+	url('../fonts/OpenSans.woff2') format("font/woff2");
 	font-weight: 600; /* Semi Bold */
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Open Sans";
-/*	src: local("Open Sans Bold"), url("../fonts/OpenSans-Bold.ttf") format("TrueType"),*/
-	src: url("../fonts/OpenSans.woff2") format("font/woff2");
+	src: local("Open Sans Bold"), url('../fonts/OpenSans-Bold.ttf') format("TrueType"),
+	url('../fonts/OpenSans.woff2') format("font/woff2");
 	font-weight: 700; /* Bold */
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Open Sans ExtraBold";
-/*	src: local("Open Sans ExtraBold"), url("../fonts/OpenSans-ExtraBold.ttf") format("TrueType"),*/
-	src: url("../fonts/OpenSans.woff2") format("font/woff2");
+	src: local("Open Sans ExtraBold"), url('../fonts/OpenSans-ExtraBold.ttf') format("TrueType"),
+	url('../fonts/OpenSans.woff2') format("font/woff2");
 	font-weight: 800; /* Extra Bold */
 	font-style: normal;
 }

@@ -1,0 +1,64 @@
+.main {
+    width: 50%;
+    height: 300px;
+    background-image: url('https://avatars.dzeninfra.ru/get-zen_doc/41204/pub_63e201fdfa3cd72bc869dde2_63e20250ffd653288f8c8656/scale_1200');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% 40%;
+    background-color: rgb(153, 155, 191);
+    transform: scaleX(-1);
+}
+
+.cart-wrapper {
+    text-align: right;
+    background-color: #d84c15;
+    margin-right: 50%;
+    margin-left: 50px;
+    transform: scaleX(-1);
+}
+
+a {
+    padding-right: 1.5em;
+    line-height: 5em;
+}
+
+.cart {
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    color: #fff;
+}
+
+.cart::before {
+    display: inline-block;
+    content: url('../images/cart-outline-white.svg');
+    width: 30px;
+    height: auto;
+    position: absolute;
+    left: -50px;
+    transform: translateY(8%);
+}
+
+/* .cart::before {
+    content: '@';
+} */
+
+/* U+005C */
+/* .cart::after {
+     content: "\005C";
+} */
+
+form {
+    text-align: right;
+    margin: 10px 50% 10px 50px;
+    transform: scaleX(-1);
+}
+
+label {
+    font-family: sans-serif;
+}
+
+label:hover {
+    cursor: pointer;
+}
