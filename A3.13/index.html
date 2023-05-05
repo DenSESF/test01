@@ -4,13 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Strong Agency</title>
-<!-- 	<link rel="preconnect" href="https://fonts.googleapis.com">
+<!--<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/for-tests.css">
 </head>
 <body>
+	<div class="info"><p>Ширина: <span class="viewwidth"></span></p></div>
 	<header>
 		<nav class="menu">
 			<ul>
@@ -25,12 +27,12 @@
 		<div class="intro-wrapper">
 			<div class="intro">
 				<div class="intro-left">
-					<h1>our strong organisation</h1>
+					<h1>our strong<br>organisation</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
 					<a href="">Contact Us</a>
 				</div>
 				<div class="intro-right">
-					<a href=""><img src="images/video.png" width="531" height="356" alt="intro video"></a>
+					<a href=""><img class="intro-video" src="images/video.png" width="531" height="356" alt="intro video"></a>
 				</div>
 			</div>
 		</div>
@@ -72,28 +74,28 @@
 			<hr>
 			<nav class="product-menu">
 				<ul>
-					<li><a href="">all</a></li>
-					<li><a href="">print template</a></li>
-					<li><a href="">web template</a></li>
-					<li><a href="">user interface</a></li>
-					<li><a href="">mock-up</a></li>
+					<li><a class="product-link product-active" href="">all</a></li>
+					<li><a class="product-link" href="">print template</a></li>
+					<li><a class="product-link" href="">web template</a></li>
+					<li><a class="product-link" href="">user interface</a></li>
+					<li><a class="product-link" href="">mock-up</a></li>
 				</ul>
 			</nav>
 			<div class="product-foto">
-				<img src="images/product.png" alt="product1">
-				<img src="images/product.png" alt="product2">
-				<img src="images/product.png" alt="product3">
-				<img src="images/product.png" alt="product4">
-				<img src="images/product.png" alt="product5">
-				<img src="images/product.png" alt="product6">
-				<img src="images/product.png" alt="product7">
-				<img src="images/product.png" alt="product8">
+				<img src="images/product.png" width="298" height="291" alt="product1">
+				<img src="images/product.png" width="298" height="291" alt="product2">
+				<img src="images/product.png" width="298" height="291" alt="product3">
+				<img src="images/product.png" width="298" height="291" alt="product4">
+				<img src="images/product.png" width="298" height="291" alt="product5">
+				<img src="images/product.png" width="298" height="291" alt="product6">
+				<img src="images/product.png" width="298" height="291" alt="product7">
+				<img src="images/product.png" width="298" height="291" alt="product8">
 			</div>
 		</div>
 		<div class="team-wrapper">
 			<div class="team-head">
 				<h2>Meet our team</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui&nbsp;/&nbsp;Ux , print template.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui&nbsp;/&nbsp;Ux&#8288;&nbsp;, print template.</p>
 				<hr>
 			</div>
 			<div class="team-members">
@@ -101,7 +103,7 @@
 				<div>
 					<div class="team-member-disc">
 						<h3>mark waugh</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui&nbsp;/&nbsp;Ux , print template.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui&nbsp;/&nbsp;Ux&#8288;&nbsp;, print template.</p>
 						<nav class="team-member-social">
 							<ul>
 								<li><a href="">Facebook</a></li>
@@ -142,12 +144,12 @@
 						<input class="button feedback-send" type="submit" value="Send message">
 					</form>
 				</div>
-				<div class="address">
+				<address class="address">
 					<h3>contact info</h3>
 					<p>Jalalabad 24&nbsp;/&nbsp;A, Ambaarkhana, Sylhet, Bangladesh</p>
 					<p>redwan&#64;deviserweb.com</p>
 					<p>(+88)&nbsp;017&nbsp;617&nbsp;46373</p>
-				</div>
+				</address>
 			</div>
 		</div>
 	</main>
@@ -160,5 +162,14 @@
 			<a href=""><img src="images/facebook.png" width="33" alt="Facebook"></a>
 		</div>
 	</footer>
+	<script>
+		let windowInfo = document.querySelector('.viewwidth');
+   		window.addEventListener('resize', showInfo);
+	   	function showInfo() {
+		   	wWidth = window.innerWidth;
+       		windowInfo.innerText = wWidth;
+	   	}
+    showInfo();
+	</script>
 </body>
 </html>

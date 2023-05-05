@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -7,9 +8,8 @@ header {
 	background-color: #F6F2F2;
 	padding-bottom: 94px;
 }
+
 .menu {
-	display: flex;
-	justify-content: center;
 	width: 1249px;
 	margin: 0 auto;
 	background: #000;
@@ -17,10 +17,10 @@ header {
 
 .menu ul {
 	display: flex;
-	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin: 0;
 	padding: 0;
-	height: 5.5em;
 }
 
 .menu li {
@@ -29,14 +29,14 @@ header {
 }
 
 .menu li > a {
-	display: flex;
-	align-items: center;
+	display: inline-block;
 	height: 100%;
 	padding: 0 24px;
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	letter-spacing: 0.035em;
+	line-height: 6.4em;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #E0E0E0;
@@ -66,13 +66,12 @@ header {
 
 .intro-left > h1 {
 	margin: 0 0 18px 0;
-/* 	padding: 0 0 36px 0; */
-font-family: "Open Sans ExtraBold", sans-serif;
-font-size: 60px;
-line-height: 72px;
-font-weight: 800;
-letter-spacing: 0.1em;
-text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+	font-size: 60px;
+	line-height: 1.2em;
+	font-weight: 800;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 }
 
 p {
@@ -83,12 +82,14 @@ p {
 	-webkit-hyphens: auto;
 	hyphens: auto;
 	opacity: 0.7;
-	color: #000000;
+	color: #000;
 }
 
 .intro-left > p {
 	margin: 0 0 52px 0;
 	width: 85%;
+/* 	opacity: 0.7;
+	color: #000; */
 }
 
 .intro-left > a {
@@ -103,7 +104,7 @@ p {
 	letter-spacing: 0.025em;
 	text-decoration: none;
 	background-color: #FF2D2D;
-	color: #FFFFFF;
+	color: #FFF;
 }
 
 .intro-right {
@@ -121,7 +122,7 @@ p {
 /* Секция do you know we can provide for you ? */
 .service-wrapper {
 	background-color: #FFF;
-	margin-bottom: 46px;
+	margin-bottom: 73px;
 }
 
 .service {
@@ -179,7 +180,7 @@ h2 {
 
 .service-right > div {
 	width: 50%;
-	margin-bottom: 23px;
+	margin-bottom: 0px;
 }
 
 .service-right img {
@@ -198,22 +199,19 @@ h2 {
 }
 
 .service-right p {
-	margin-top: 0px;
-	margin-left: 18px;
+	margin: 0 18px 12px;
 }
 
-hr {
+main > hr:nth-of-type(1) {
 	border: none;
 	border-top: 2px solid #ececec;
 	margin: 0 auto;
 	width: 1249px;
 	height: 0px;
-}
-
-main > hr:nth-of-type(1) {
 	margin-bottom: 94px;
 }
 
+/* Секция feature products */
 .product-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -228,7 +226,7 @@ main > hr:nth-of-type(1) {
 .product-wrapper > p {
 	text-align: center;
 	margin: 0px auto 25px;
-	width: 25%;
+	width: 476px;
 }
 
 .product-wrapper > hr {
@@ -249,9 +247,8 @@ main > hr:nth-of-type(1) {
 	margin-bottom: 54px;
 }
 
-.product-menu ul {
+.product-menu > ul {
 	display: flex;
-	align-items: center;
 	margin: 0;
 	padding: 0;
 }
@@ -261,7 +258,7 @@ main > hr:nth-of-type(1) {
 	list-style: none;
 }
 
-.product-menu a {
+.product-link {
 	margin: 0 24px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -269,7 +266,7 @@ main > hr:nth-of-type(1) {
 	color: #000;
 }
 
-.product-menu li > a:hover {
+.product-active, .product-link:hover {
 	opacity: 1;
 	color: #ff2d2d;
 }
@@ -304,7 +301,7 @@ main > hr:nth-of-type(1) {
 }
 
 .team-head > p {
-	width: 37%;
+	width: 462px;
 	margin-top: 0;
 	margin-bottom: 29px;
 	margin-left: 2px;
@@ -384,6 +381,125 @@ main > hr:nth-of-type(1) {
 
 .team-foto > img {
 	margin-right: 20px;
+}
+
+/* <============= Адаптивный дизайн ==============> */
+
+@media screen and (max-width: 1300px) {
+	.team-head > h2{
+		margin-left: 9px;
+		margin-right: 9px;
+	}
+	.team-head > p {
+		margin-left: 21px;
+	 }
+	.team-head > hr {
+	 	margin-left: 21px;
+	 }
+}
+
+@media screen and (max-width: 1285px) {
+	.menu, .intro, .service, .product-foto, .team-wrapper {
+		width: 100%;
+	}
+	.intro-left > h1, .intro-left > p, .intro-left > a {
+		margin-left: 9px;
+		margin-right: 9px;
+	}
+	.intro-right {
+		padding-left: 9px;
+		padding-right: 9px;
+	}
+	.intro-right > a, .intro-video {
+		width: 100%;
+		height: auto;
+	}
+	main > hr:nth-of-type(1) {
+		width: 90%;
+	}
+	.product-foto > img {
+		width: 25%;
+		height: auto;
+	}
+	.team-foto {
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.intro-left > h1 {
+		font-size: 5vw;		
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.intro {
+/* 		flex-wrap: wrap; */
+		flex-direction: column;
+		align-items: center;
+	}	
+	.intro-left, .intro-right {
+		width: 98%;
+	}
+	.intro-right {
+		text-align: center;
+	}
+	.intro-left > h1 {
+		font-size: 45px;
+		hyphens: auto;
+	}
+	.intro-left > p {
+		width: 96%;
+		text-align: left;
+	}
+	.service-right > div, .product-wrapper > p {
+		width: 100%;
+	}
+	.intro-left > a {
+		margin-bottom: 10px;
+	}
+	.intro-right {
+		padding-top: 0;
+	}
+	.product-wrapper > h2 {
+		margin: 0 auto 38px;
+		text-align: center;
+	}
+	.product-menu > ul {
+		flex-wrap: wrap;
+		justify-content: end;
+	}
+	.product-foto > img {
+		flex: 1 0 auto;
+		padding: 0;
+		margin: 5px;
+	}
+	 .team-head > p {
+	 	width: 96%;
+	 	margin: 0 auto 29px;
+	 }
+	 .team-head > hr {
+	 	margin-left: 9px;
+	 }
+}
+
+@media screen and (max-width: 650px) {
+	.service {
+		flex-direction: column;
+	}
+	.service-left, .service-right {
+		width: 100%;
+	}
+	.service-left > h2, .service-left > p, .service-left > a {
+		margin-left: 9px;
+		margin-right: 9px;
+	}
+	.service-left > a{
+		margin-bottom: 10px;
+	}
+	.product-menu > ul {
+		flex-direction: column;
+	}
 }
 
 /* Секция Design tips, tricks, and freebies. Delivered weekly. */
@@ -467,7 +583,7 @@ main > hr:nth-of-type(1) {
 
 .feedback-head > p {
 	margin-top: 0px;
-	margin-bottom: 50px;	
+	margin-bottom: 50px;
 }
 
 .feedback-head > hr {
@@ -543,6 +659,7 @@ main > hr:nth-of-type(1) {
 .address {
 	padding: 7% 78px;
 	flex: 1 1 auto;
+	font-style: normal;
 	background: #000;
 }
 
@@ -567,8 +684,12 @@ main > hr:nth-of-type(1) {
 	color: #fff;
 }
 
+.address > p:nth-of-type(2) {
+	white-space: nowrap;
+}
+
 /* Footer на флексах */
-footer {
+/* footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -588,15 +709,13 @@ footer > p {
 	display: inline-block;
 	height: 100%;
 	margin: 0 7px;
-}
+} */
 
 /* Footer на inline-block */
-/* footer {
+footer {
   white-space: nowrap;
   padding: 47px 16vw 32px;
-	margin: 0 11px;  
   background-color: #000;
-  color: #b8b8b8;
 }
 
 footer > p, footer > div {
@@ -604,6 +723,8 @@ footer > p, footer > div {
 	margin: 0;
 	width: 50%;
 	vertical-align: middle;
+	opacity: 1;
+	color: #b8b8b8;
 }
 
 .social-icon {
@@ -613,5 +734,19 @@ footer > p, footer > div {
 .social-icon > a {
 	display: inline-block;
 	height: 100%;
-	margin: 0 7px;
-} */
+	margin: 5px 7px;
+}
+
+@media screen and (max-width: 900px) {
+	footer {
+  	white-space: normal;
+  }
+  footer > p, footer > div {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+	}
+	.social-icon {
+		text-align: center;
+	}
+}
