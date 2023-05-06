@@ -99,7 +99,7 @@
 				<hr>
 			</div>
 			<div class="team-members">
-				<img src="images/vzardini.png" alt="Mark Waugh">
+				<img src="images/vzardini.png" width="321" height="458" alt="Mark Waugh">
 				<div>
 					<div class="team-member-disc">
 						<h3>mark waugh</h3>
@@ -114,10 +114,10 @@
 						</nav>
 					</div>
 					<div class="team-foto">
-						<img src="images/face2.png" alt="photo1">
-						<img src="images/face2.png" alt="photo2">
-						<img src="images/face2.png" alt="photo3">
-						<img src="images/face2.png" alt="photo4">
+						<img src="images/face2.png" width="197" height="214" alt="photo1">
+						<img src="images/face2.png" width="197" height="214" alt="photo2">
+						<img src="images/face2.png" width="197" height="214" alt="photo3">
+						<img src="images/face2.png" width="197" height="214" alt="photo4">
 					</div>
 				</div>
 			</div>
@@ -130,26 +130,26 @@
 			</form>
 		</div>
 		<div class="feedback-wrapper">
-			<div class="feedback-head">
-				<h2>get in touch</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-				<hr>
-			</div>
-			<div>
-				<div class="feedback">
-					<form action="#" method="get">
+			<div class="feedback">
+				<div class="feedback-head">
+					<h2>get in touch</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+					<hr>
+				</div>
+				<div class="feedback-body">
+					<form class="feedback-form" action="#" method="get">
 						<input type="text" name="feedback-name" placeholder="Name" required>
 						<input type="email" name="feedback-mail" placeholder="Your Mail" required>
 						<textarea mame="feedback-text" cols="100" rows="8" placeholder="Type your message" required></textarea>
 						<input class="button feedback-send" type="submit" value="Send message">
 					</form>
+					<address>
+						<h3>contact info</h3>
+						<p>Jalalabad 24&nbsp;/&nbsp;A, Ambaarkhana, Sylhet,<br>Bangladesh</p>
+						<p>redwan&#64;deviserweb.com</p>
+						<p>(+88)&nbsp;017&nbsp;617&nbsp;46373</p>
+					</address>
 				</div>
-				<address class="address">
-					<h3>contact info</h3>
-					<p>Jalalabad 24&nbsp;/&nbsp;A, Ambaarkhana, Sylhet, Bangladesh</p>
-					<p>redwan&#64;deviserweb.com</p>
-					<p>(+88)&nbsp;017&nbsp;617&nbsp;46373</p>
-				</address>
 			</div>
 		</div>
 	</main>
@@ -164,12 +164,12 @@
 	</footer>
 	<script>
 		let windowInfo = document.querySelector('.viewwidth');
-   		window.addEventListener('resize', showInfo);
-	   	function showInfo() {
-		   	wWidth = window.innerWidth;
-       		windowInfo.innerText = wWidth;
-	   	}
-    showInfo();
+		window.addEventListener('resize', showInfo);
+		function showInfo() {
+			wWidth = window.innerWidth;
+			windowInfo.innerText = wWidth;
+		}
+		showInfo();
 	</script>
 </body>
 </html>
