@@ -510,8 +510,8 @@ main > hr:nth-of-type(1) {
 	color: #000;
 }
 
-.feedback-form >input[type="text"], 
-.feedback-form input[type="email"] {
+.feedback-form > input[type="text"], 
+.feedback-form > input[type="email"] {
 	line-height: 69px;
 	margin-bottom: 46px;
 }
