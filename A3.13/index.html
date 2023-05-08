@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Strong Agency</title>
-<!--<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"> -->
-	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/for-tests.css">
 </head>
 <body>
-	<div class="info"><p>Ширина: <span class="viewwidth"></span></p></div>
 	<header>
 		<nav class="menu">
 			<ul>
@@ -114,10 +108,22 @@
 						</nav>
 					</div>
 					<div class="team-foto">
-						<img src="images/face2.png" width="197" height="214" alt="photo1">
-						<img src="images/face2.png" width="197" height="214" alt="photo2">
-						<img src="images/face2.png" width="197" height="214" alt="photo3">
-						<img src="images/face2.png" width="197" height="214" alt="photo4">
+						<div class="team-foto-title">
+							<h3 class="team-member-name">sokina jue</h3>
+							<img src="images/face2.png" width="197" height="214" alt="photo1">
+						</div>
+						<div class="team-foto-title">
+							<h3 class="team-member-name">sokina jue</h3>
+							<img src="images/face2.png" width="197" height="214" alt="photo2">
+						</div>
+						<div class="team-foto-title">
+							<h3 class="team-member-name">sokina jue</h3>
+							<img src="images/face2.png" width="197" height="214" alt="photo3">
+						</div>
+						<div class="team-foto-title">
+							<h3 class="team-member-name">sokina jue</h3>
+							<img src="images/face2.png" width="197" height="214" alt="photo4">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -138,17 +144,17 @@
 				</div>
 				<div class="feedback-body">
 					<form class="feedback-form" action="#" method="get">
-						<input type="text" name="feedback-name" placeholder="Name" required>
+						<input type="text" name="feedback-name" placeholder="Name" pattern="[A-Za-z]+" required>
 						<input type="email" name="feedback-mail" placeholder="Your Mail" required>
-						<textarea mame="feedback-text" cols="100" rows="8" placeholder="Type your message" required></textarea>
+						<textarea name="feedback-text" cols="100" rows="8"  maxlength="32" placeholder="Type your message" required></textarea>
 						<input class="button feedback-send" type="submit" value="Send message">
 					</form>
-					<address>
+					<div class="contact-info">
 						<h3>contact info</h3>
-						<p>Jalalabad 24&nbsp;/&nbsp;A, Ambaarkhana, Sylhet,<br>Bangladesh</p>
+						<address>Jalalabad 24&nbsp;/&nbsp;A, Ambaarkhana, Sylhet,<br>Bangladesh</address>
 						<p>redwan&#64;deviserweb.com</p>
 						<p>(+88)&nbsp;017&nbsp;617&nbsp;46373</p>
-					</address>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -156,20 +162,11 @@
 	<footer>
 		<p>&#169; Copyright &#64;Junaed 2016, All rights reserved.</p>
 		<div class="social-icon">
-			<a href=""><img src="images/twitter.png" width="33" alt="Twitter"></a>
-			<a href=""><img src="images/linkedin.png" width="33" alt="LinkedIn"></a>
-			<a href=""><img src="images/google.png" width="33" alt="Google"></a>
-			<a href=""><img src="images/facebook.png" width="33" alt="Facebook"></a>
+			<a href=""><img src="images/twitter.png" width="33" height="33" alt="Twitter"></a>
+			<a href=""><img src="images/linkedin.png" width="33" height="33" alt="LinkedIn"></a>
+			<a href=""><img src="images/google.png" width="33" height="33" alt="Google"></a>
+			<a href=""><img src="images/facebook.png" width="33" height="33" alt="Facebook"></a>
 		</div>
 	</footer>
-	<script>
-		let windowInfo = document.querySelector('.viewwidth');
-		window.addEventListener('resize', showInfo);
-		function showInfo() {
-			wWidth = window.innerWidth;
-			windowInfo.innerText = wWidth;
-		}
-		showInfo();
-	</script>
 </body>
 </html>
